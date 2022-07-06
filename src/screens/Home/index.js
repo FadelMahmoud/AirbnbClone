@@ -18,7 +18,7 @@ const HomeScreen = (props) => {
 
       </Pressable>
 
-      <ImageBackground source={require('../../../assets/images/wallpaper.jpg')}
+      <ImageBackground source={require('../../../assets/images/wallpaper1.jpg')}
       style={styles.image}>
 
         <Text style={styles.title}>Go Near</Text>

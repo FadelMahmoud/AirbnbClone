@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     searchButton:{
         position: 'absolute',
         top:25,
-        /*elevation: 10,*/
+        elevation: 10,
         zIndex: 10,
         backgroundColor: 'white',
         height: 60,
