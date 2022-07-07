@@ -26,11 +26,11 @@ const DestinationSearchScreen = () => {
         data={searchResults}
         renderItem={({item}) =>
           <View style={styles.row}>
-            <View style={styles.iconContainer}>  
-              <Entypo name={'location-pin'} size={35} color="black" /> 
+            <View style={styles.iconContainer}>
+              <Entypo name={'location-pin'} size={35} color="black" />
             </View>
 
-            <Text> {item.description}</Text> 
+            <Text> {item.description}</Text>
           </View>
              }
       />

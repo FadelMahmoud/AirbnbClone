@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         padding: 5,
         borderRadius: 8,
         marginRight: 10,
-    }
+    },
 });
 
 export default styles;
