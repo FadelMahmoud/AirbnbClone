@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -14,6 +15,7 @@ import HomeScreen from './src/screens/Home';
 import SearchResultsScreen from './src/screens/SearchResults';
 import DestinationSearchScreen from './src/screens/DestinationSearch';
 import GuestsScreen from './src/screens/Guests';
+import Router from './src/navigation/Router';
 import Post from './src/components/Post';
 import feed from './assets/data/feed';
 
@@ -23,12 +25,15 @@ const App: () => Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      
+      <Router/>
+      
+      {/* <SafeAreaView> */}
         {/* <HomeScreen /> */}
         {/* <SearchResultsScreen /> */}
-        <GuestsScreen />
+        {/* <GuestsScreen /> */}
         {/* <DestinationSearchScreen /> */}
-      </SafeAreaView>
+      {/* </SafeAreaView> */}
     </>
   );
 };

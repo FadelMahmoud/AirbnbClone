@@ -13,12 +13,12 @@ const styles = StyleSheet.create({
         fontSize: 60,
         fontWeight: 'bold',
         color: 'white',
-        width: '50%',
+        width: '60%',
         marginLeft: 25,
     },
     button:{
         backgroundColor: '#fff',
-        width: 200,
+        width: 170,
         height: 40,
         borderRadius: 10,
         marginLeft: 25,
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'bold',
         color: 'black',
+        marginHorizontal: 10,
     },
 });
 
