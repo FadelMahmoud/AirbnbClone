@@ -11,5 +11,5 @@ Latest achievements: <br />
 Next target: deal with advance UI, such as maps and carousel flatlist.<br />
 
 Some screenshots from the app: <br />
-1- Home screen
+1- Home screen <br />
 ![Home screen](https://user-images.githubusercontent.com/73054268/178348721-83d56d9e-8356-4965-8483-61b5eb161f10.jpeg | width = 150)
