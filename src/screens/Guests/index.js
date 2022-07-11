@@ -2,13 +2,15 @@
 import {Text, View, Pressable} from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles.js';
-
+import { useNavigation } from '@react-navigation/native';
 
 const GuestsScreen = (props) => {
 
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
   const [infants, setInfants] = useState(0);
+
+  const navigation = useNavigation();
   
   return (
     <View style={{ justifyContent:'space-between' , height: '100%' }}>
@@ -105,7 +107,14 @@ const GuestsScreen = (props) => {
       <View>
         <Pressable 
           style={{backgroundColor: '#f15454' , marginBottom: 10 , marginHorizontal: 20 , borderRadius: 10 ,alignItems: 'center' , justifyContent: 'center' , height: 50 , fontSize: 20}}
-          onPress={() => console.log('navigate') }
+          onPress={() => 
+            navigation.navigate('Home' , {
+              screen: 'Explore',
+              params: {
+                screen: 'SearchResults',
+              },
+            })  
+          }
         >
           <Text style={{color: 'white'}}>Search</Text>
         </Pressable>
