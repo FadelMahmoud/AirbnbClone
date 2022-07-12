@@ -6,7 +6,9 @@ Latest achievements: <br />
 2- Dealt with bottom & top tab bars. <br />
 3- Explored nested screens navigations. <br />
 4- Worked with google places autocomplete api. <br />
-6- Applied beautiful UI styling using various components and vector icons. <br /><br />
+6- Applied beautiful UI styling using various components and vector icons. <br />
+7- Explored the setup & Implementation of google maps. <br />
+8- Styled google places markers dynamically. <br /><br />
 
 Next target: deal with advance UI, such as maps and carousel flatlist.<br />
 
@@ -22,6 +24,9 @@ Some screenshots from the app: <br /><br />
 3- Guests screen <br />
 <img src="https://user-images.githubusercontent.com/73054268/178350731-9a6af1b8-d0a2-4a01-ba7d-aeeaa31123ea.jpeg" width=400 height=750>
 
-<br />
-4- Search Results screen <br />
+4- Search Results List view screen <br />
 <img src="https://user-images.githubusercontent.com/73054268/178350815-89605274-bebc-4cc3-adf0-576843220b02.jpeg" width=400 height=750>
+
+<br />
+5- Search Results Map view screen <br />
+<img src="https://user-images.githubusercontent.com/73054268/178559101-cf56f864-da0e-4e35-b179-31c726ff8cdf.jpeg" width=400 height=750>
