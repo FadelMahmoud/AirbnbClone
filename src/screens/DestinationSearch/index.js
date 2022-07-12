@@ -1,4 +1,9 @@
 /* eslint-disable prettier/prettier */
+
+
+/*
+old_google_key = AIzaSyAuxqvxNKY0rUj8CUU3tOtIfzBFsfvxYfw
+ */ 
 import {View} from 'react-native';
 import React from 'react';
 
@@ -28,7 +33,7 @@ const DestinationSearchScreen = () => {
           inputText: styles.textInput,
         }}
         query={{
-          key: 'AIzaSyAuxqvxNKY0rUj8CUU3tOtIfzBFsfvxYfw',
+          key: 'PASTE_YOUR_GOOGLE_API_KEY_HEREEEEE',
           language: 'en',
           type: '(cities)',
         }}

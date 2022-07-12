@@ -4,6 +4,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Home';
 import ExploreNavigator from './ExploreNavigator';
+import SearchResultsMap from '../screens/SearchResultsMap';
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -45,7 +46,8 @@ const HomeTabNavigator = () => {
     >
       <Tab.Screen 
         name={"Explore"} 
-        component={ExploreNavigator}       
+        /* component={ExploreNavigator} */   
+        component={SearchResultsMap}       
       />
 
       <Tab.Screen 
