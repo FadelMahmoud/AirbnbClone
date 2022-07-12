@@ -1,44 +1,38 @@
 /* eslint-disable prettier/prettier */
-import { FlatList, Pressable, Text, View, TextInput } from 'react-native';
-import React, {useState} from 'react';
+import {View} from 'react-native';
+import React from 'react';
 
 import styles from './styles.js';
-import searchResults from '../../../assets/data/search';
-import Entypo from 'react-native-vector-icons/Entypo';
 import {useNavigation} from '@react-navigation/native';
+import SuggestionRow from './SuggestionRow';
+
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
 const DestinationSearchScreen = () => {
 
-    const {inputText, setInputText} = useState('');
-
-    const navigation = useNavigation();
+  const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
       {/* input component*/}
-      <TextInput
-        style={styles.textInput}
-        placeholder="Where are you going ?"
-        value={inputText}
-        onChangeText={setInputText}
-      />
 
-
-      {/* list of destinations*/}
-      <FlatList
-        data={searchResults}
-        renderItem={({item}) =>
-          <Pressable 
-            style={styles.row}
-            onPress={ () => navigation.navigate('Guests') }  
-          >
-            <View style={styles.iconContainer}>
-              <Entypo name={'location-pin'} size={35} color="black" />
-            </View>
-
-            <Text> {item.description}</Text>
-          </Pressable>
-             }
+      <GooglePlacesAutocomplete
+        placeholder='Where are you going ?'
+        onPress={(data, details = null) => {
+          // 'details' is provided when fetchDetails = true
+          console.log(data, details);
+          navigation.navigate('Guests');
+        }}
+        suppressDefaultStyles
+        styles={{
+          inputText: styles.textInput,
+        }}
+        query={{
+          key: 'AIzaSyAuxqvxNKY0rUj8CUU3tOtIfzBFsfvxYfw',
+          language: 'en',
+          type: '(cities)',
+        }}
+        renderRow={ (item) => <SuggestionRow item={item} /> }
       />
 
     </View>
