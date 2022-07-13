@@ -82,7 +82,7 @@ const SearchResultsMap = () => {
         showsHorizontalScrollIndicator={false}
         snapToInterval={width - 80}
         snapToAlignment={'center'}
-        decelerationRate={'fast'}
+        decelerationRate={'normal'}
         viewabilityConfig={viewConfig.current}
         onViewableItemsChanged={onViewChanged.current}
         />
