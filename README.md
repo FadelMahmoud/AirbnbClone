@@ -6,11 +6,11 @@ Latest achievements: <br />
 2- Dealt with bottom & top tab bars. <br />
 3- Explored nested screens navigations. <br />
 4- Worked with google places autocomplete api. <br />
-6- Applied beautiful UI styling using various components and vector icons. <br />
-7- Explored the setup & Implementation of google maps. <br />
-8- Coded advanced UI such as google maps markers and carousel flatlist. <br />
-9- Animated google maps based on flatlist visible item & custom markers. <br />
-10- Screen navigation with parameters. <br /><br />
+5- Applied beautiful UI styling using various components and vector icons. <br />
+6- Explored the setup & Implementation of google maps. <br />
+7- Coded advanced UI such as google maps markers and carousel flatlist. <br />
+8- Animated google maps based on flatlist visible item & custom markers. <br />
+9- Screen navigation with parameters. <br /><br />
 
 Next target: Explore & Implement AWS cloud copmuting for app backend.<br />
 
