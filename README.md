@@ -12,9 +12,9 @@ A new mobile app development in my React Native journey.
 8- Animated google maps based on flatlist visible item & custom markers. <br />
 9- Screen navigation with parameters. <br /><br />
 
-**Next Target:** Explore & Implement AWS cloud copmuting for app backend.<br />
+## **Next Target:** Explore & Implement AWS cloud copmuting for app backend.<br />
 
-**Some screenshots from the app:** <br /><br />
+## **Some screenshots from the app:** <br /><br />
 1- **Home screen** <br />
 <img src="https://user-images.githubusercontent.com/73054268/178348721-83d56d9e-8356-4965-8483-61b5eb161f10.jpeg" width=400 height=750>
 
