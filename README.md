@@ -13,7 +13,7 @@ A new mobile app development in my React Native journey.
 9- Screen navigation with parameters. <br /><br />
 
 ## **Next Target:** <br />
-Explore & Implement AWS cloud computing for app backend.<br /><br />
+Explore & Implement User authentications & AWS cloud computing for app backend.<br /><br />
 
 ## **Some screenshots from the app:** <br />
 1- **Home screen** <br />
