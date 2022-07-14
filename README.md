@@ -8,9 +8,11 @@ Latest achievements: <br />
 4- Worked with google places autocomplete api. <br />
 6- Applied beautiful UI styling using various components and vector icons. <br />
 7- Explored the setup & Implementation of google maps. <br />
-8- Styled google places markers dynamically. <br /><br />
+8- Coded advanced UI such as google maps markers and carousel flatlist. <br />
+9- Animated google maps based on flatlist visible item & custom markers. <br />
+10- Screen navigation with parameters. <br /><br />
 
-Next target: deal with advance UI, such as maps and carousel flatlist.<br />
+Next target: Explore & Implement AWS cloud copmuting for app backend.<br />
 
 Some screenshots from the app: <br /><br />
 1- Home screen <br />
@@ -29,4 +31,4 @@ Some screenshots from the app: <br /><br />
 
 <br />
 5- Search Results Map view screen <br />
-<img src="https://user-images.githubusercontent.com/73054268/178559101-cf56f864-da0e-4e35-b179-31c726ff8cdf.jpeg" width=400 height=750>
+<img src="https://user-images.githubusercontent.com/73054268/178955243-c53ae87d-6374-4c0c-8572-9f5428267f2c.jpeg" width=400 height=750>
