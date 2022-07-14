@@ -1,7 +1,7 @@
 # AirbnbClone
 A new mobile app development in my React Native journey.
 
-###**Latest achievements:** <br />
+## **Latest achievements:** <br />
 1- Implemented multiple and different looking screens. <br />
 2- Dealt with bottom & top tab bars. <br />
 3- Explored nested screens navigations. <br />
