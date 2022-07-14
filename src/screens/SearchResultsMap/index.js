@@ -10,7 +10,6 @@ import PostCarouselItem from '../../components/PostCarouselItem';
 
 const SearchResultsMap = () => {
 
-
   const width = useWindowDimensions().width;
   const [selectedPlaceId, setSelectedPlaceId] = useState(null);
 

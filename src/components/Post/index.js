@@ -1,15 +1,23 @@
 /* eslint-disable prettier/prettier */
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, Pressable} from 'react-native';
 import React from 'react';
-
 import styles from './styles.js';
+import { useNavigation } from '@react-navigation/native';
 
 const Post = (props) => {
 
     const post = props.post;
 
+    const navigation = useNavigation();
+
+    const goToDetailedPostScreen = () => {
+      navigation.navigate( 'DetailedPost', {postId : post.id} );
+    }
+
   return (
-    <View style={styles.container}>
+    <Pressable 
+      onPress={goToDetailedPostScreen}
+      style={styles.container}>
 
       {/* image */}
       <Image
@@ -34,7 +42,7 @@ const Post = (props) => {
       {/* Total price*/}
       <Text style={styles.totalPrice}>${post.totalPrice} total</Text>
 
-    </View>
+    </Pressable>
   );
 };
 

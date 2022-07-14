@@ -46,8 +46,7 @@ const HomeTabNavigator = () => {
     >
       <Tab.Screen 
         name={"Explore"} 
-        /* component={ExploreNavigator} */       
-        component={SearchResultsMap}       
+        component={ExploreNavigator}       
       />
 
       <Tab.Screen 
