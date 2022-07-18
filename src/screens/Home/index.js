@@ -4,9 +4,13 @@ import React from 'react';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {useNavigation} from '@react-navigation/native';
+import { Auth } from 'aws-amplify';
 
 const HomeScreen = (props) => {
   
+  const logout = () => {
+    Auth.signOut();
+  }
   const navigation = useNavigation();
 
   return (
@@ -34,6 +38,11 @@ const HomeScreen = (props) => {
 
         </Pressable>
       </ImageBackground>
+
+      <Pressable onPress={logout}>
+        <Text> logout</Text>
+      </Pressable>
+
     </View>
   );
 };

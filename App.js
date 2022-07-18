@@ -21,7 +21,6 @@ import feed from './assets/data/feed';
 
 const post1 = feed[0];
 
-import { Amplify } from '@aws-amplify';
 //import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
 // import { withAuthenticator } from '@aws-amplify/ui-react';
 import { withAuthenticator, Button, Heading } from 'aws-amplify-react-native';
@@ -32,7 +31,7 @@ import { withAuthenticator, Button, Heading } from 'aws-amplify-react-native';
 
 
 /* src/App.js */
-function App({signOut, user}) {
+function App() {
   // Todo logic here
 
   return (
