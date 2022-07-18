@@ -40,7 +40,7 @@ const Post = (props) => {
       </Text>
 
       {/* Total price*/}
-      <Text style={styles.totalPrice}>${post.totalPrice} total</Text>
+      <Text style={styles.totalPrice}>${post.newPrice * 7} total</Text>
 
     </Pressable>
   );
