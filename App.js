@@ -21,21 +21,52 @@ import feed from './assets/data/feed';
 
 const post1 = feed[0];
 
-const App: () => Node = () => {
+import { Amplify } from '@aws-amplify';
+//import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+// import { withAuthenticator } from '@aws-amplify/ui-react';
+import { withAuthenticator, Button, Heading } from 'aws-amplify-react-native';
+
+// import '@aws-amplify/ui/dist/style.css';
+
+//import '@aws-amplify/ui-react/dist/styles';
+
+
+/* src/App.js */
+function App({signOut, user}) {
+  // Todo logic here
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      
       <Router/>
-      
-      {/* <SafeAreaView> */}
-        {/* <HomeScreen /> */}
-        {/* <SearchResultsScreen /> */}
-        {/* <GuestsScreen /> */}
-        {/* <DestinationSearchScreen /> */}
-      {/* </SafeAreaView> */}
+      {/* Add Todo JSX here  */}
+      {/* <Heading level={1}>Hello {user.username}</Heading>
+      <Button onClick={signOut}>Sign out</Button> */}
     </>
   );
-};
+}
 
-export default App;
+export default withAuthenticator(App);
+
+// const App: () => Node = () =>  {
+//   return (
+//     <>
+//       <StatusBar barStyle="dark-content" />
+      
+//       <Router/>
+      
+//       {/* <SafeAreaView> */}
+//         {/* <HomeScreen /> */}
+//         {/* <SearchResultsScreen /> */}
+//         {/* <GuestsScreen /> */}
+//         {/* <DestinationSearchScreen /> */}
+//       {/* </SafeAreaView> */}
+
+//       {/* Add Todo JSX here 
+//       <Heading level={1}>Hello {user.username}</Heading>
+//       <Button onClick={signOut}>Sign out</Button> */}
+//     </>
+//   );
+// };
+
+// export default App;

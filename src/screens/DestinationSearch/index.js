@@ -11,10 +11,9 @@ import styles from './styles.js';
 import {useNavigation} from '@react-navigation/native';
 import SuggestionRow from './SuggestionRow';
 
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 
 const DestinationSearchScreen = () => {
-
   const navigation = useNavigation();
 
   return (
@@ -22,7 +21,7 @@ const DestinationSearchScreen = () => {
       {/* input component*/}
 
       <GooglePlacesAutocomplete
-        placeholder='Where are you going ?'
+        placeholder="Where are you going ?"
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
           console.log(data, details);
@@ -37,9 +36,8 @@ const DestinationSearchScreen = () => {
           language: 'en',
           type: '(cities)',
         }}
-        renderRow={ (item) => <SuggestionRow item={item} /> }
+        renderRow={item => <SuggestionRow item={item} />}
       />
-
     </View>
   );
 };
