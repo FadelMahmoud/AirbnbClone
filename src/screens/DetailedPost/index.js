@@ -8,11 +8,11 @@ const DetailedPost = () => {
 
   const route = useRoute();
   const post = places.find( place => place.id === route.params.postId);
-
+  
   return (
     <View>
       <Text>DetailedPost</Text>
-      <Text>{post.title}</Text>
+      <Text>post.title</Text>
     </View>
   );
 };

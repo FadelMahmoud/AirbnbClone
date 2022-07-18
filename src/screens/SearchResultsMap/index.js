@@ -10,7 +10,9 @@ import PostCarouselItem from '../../components/PostCarouselItem';
 import { API, graphqlOperation } from 'aws-amplify';
 import {listPosts} from '../../graphql/queries';
 
-const SearchResultsMap = () => {
+const SearchResultsMap = (props) => {
+
+  const {guests} = props;
 
   const width = useWindowDimensions().width;
 
@@ -34,7 +36,13 @@ const SearchResultsMap = () => {
       try {
 
         const postsResult = await API.graphql(
-          graphqlOperation(listPosts)
+          graphqlOperation(listPosts , 
+            { filter: {
+                maxGuests: {
+                  ge: guests
+                }
+              }
+            })
         );
 
         // console.log(postsResult);

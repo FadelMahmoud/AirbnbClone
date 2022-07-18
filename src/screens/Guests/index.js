@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import {Text, View, Pressable} from 'react-native';
 import React, {useState} from 'react';
@@ -112,6 +113,9 @@ const GuestsScreen = (props) => {
               screen: 'Explore',
               params: {
                 screen: 'SearchResults',
+                  params: {
+                    guests: adults + children
+                  }
               },
             })  
           }
