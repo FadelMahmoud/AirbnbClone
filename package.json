@@ -10,7 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+<<<<<<< HEAD
     "@aws-amplify/ui-react": "^3.1.0",
+=======
+>>>>>>> 4deba5c9e9cc5c0db18f208875199be79771bd49
     "@react-native-async-storage/async-storage": "^1.17.7",
     "@react-native-community/netinfo": "^9.3.0",
     "@react-native-picker/picker": "^2.4.2",
@@ -21,8 +24,12 @@
     "amazon-cognito-identity-js": "^5.2.10",
     "aws-amplify": "^4.3.27",
     "aws-amplify-react-native": "^6.0.5",
+<<<<<<< HEAD
     "react": "^18.0.0",
     "react-dom": "^18.2.0",
+=======
+    "react": "18.0.0",
+>>>>>>> 4deba5c9e9cc5c0db18f208875199be79771bd49
     "react-native": "0.69.1",
     "react-native-dotenv": "^3.3.1",
     "react-native-gesture-handler": "^2.5.0",
