@@ -25,8 +25,10 @@ const DestinationSearchScreen = () => {
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
           console.log(data, details);
-          navigation.navigate('Guests');
+          console.log("viewport" , details.geometry.viewport);
+          navigation.navigate('Guests' , { viewport: details.geometry.viewport });
         }}
+        fetchDetails
         suppressDefaultStyles
         styles={{
           inputText: styles.textInput,
@@ -34,7 +36,7 @@ const DestinationSearchScreen = () => {
         query={{
           key: 'PASTE_YOUR_GOOGLE_API_KEY_HEREEEEE',
           language: 'en',
-          type: '(cities)',
+          // type: '(regions)',
         }}
         renderRow={item => <SuggestionRow item={item} />}
       />

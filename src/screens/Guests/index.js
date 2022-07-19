@@ -3,9 +3,17 @@
 import {Text, View, Pressable} from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles.js';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation , useRoute } from '@react-navigation/native';
 
 const GuestsScreen = (props) => {
+
+  const route = useRoute();
+
+  // const viewport = route.params.viewport;
+
+  // console.log("route.params" +  route.params);
+  console.log("route.params.viewport" +  route.params.viewport);
+  // console.log("viewport" +  viewport);
 
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
@@ -114,7 +122,8 @@ const GuestsScreen = (props) => {
               params: {
                 screen: 'SearchResults',
                   params: {
-                    guests: adults + children
+                    guests: adults + children,
+                    viewport: route.params.viewport,
                   }
               },
             })  

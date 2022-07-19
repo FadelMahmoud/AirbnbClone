@@ -7,16 +7,13 @@ import MapView from 'react-native-maps';
 import CustomMarker from '../../components/CustomMarker';
 import PostCarouselItem from '../../components/PostCarouselItem';
 
-import { API, graphqlOperation } from 'aws-amplify';
-import {listPosts} from '../../graphql/queries';
 
 const SearchResultsMap = (props) => {
 
-  const {guests} = props;
+  const {posts} = props;
 
   const width = useWindowDimensions().width;
 
-  const [posts, setPosts] = useState( [] );
   const [selectedPlaceId, setSelectedPlaceId] = useState(null);
 
   const flatlist = useRef();
@@ -29,32 +26,6 @@ const SearchResultsMap = (props) => {
   });
 
   const map = useRef();
-
-  useEffect( () => {
-
-    const fetchPosts = async () => {
-      try {
-
-        const postsResult = await API.graphql(
-          graphqlOperation(listPosts , 
-            { filter: {
-                maxGuests: {
-                  ge: guests
-                }
-              }
-            })
-        );
-
-        // console.log(postsResult);
-        setPosts(postsResult.data.listPosts.items);
-
-      } catch (e) {
-        console.log(e);
-      }
-    };
-
-    fetchPosts();
-  });
 
   useEffect( ()  => {
 
